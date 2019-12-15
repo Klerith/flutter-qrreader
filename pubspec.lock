@@ -29,6 +29,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.4.0"
+  barcode_scan:
+    dependency: "direct main"
+    description:
+      name: barcode_scan
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
   boolean_selector:
     dependency: transitive
     description:
@@ -214,13 +221,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.2"
-  qrscan:
-    dependency: "direct main"
-    description:
-      name: qrscan
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.2.17"
   quiver:
     dependency: transitive
     description:
