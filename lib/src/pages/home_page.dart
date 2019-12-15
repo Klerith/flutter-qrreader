@@ -8,7 +8,9 @@ import 'package:qrreaderapp/src/models/scan_model.dart';
 import 'package:qrreaderapp/src/pages/direcciones_page.dart';
 import 'package:qrreaderapp/src/pages/mapas_page.dart';
 
-import 'package:qrcode_reader/qrcode_reader.dart';
+// import 'package:qrcode_reader/qrcode_reader.dart';
+import 'package:qrscan/qrscan.dart' as scanner;
+
 import 'package:qrreaderapp/src/utils/utils.dart' as utils;
 
 
@@ -56,7 +58,8 @@ class _HomePageState extends State<HomePage> {
     String futureString;
 
     try {
-      futureString = await new QRCodeReader().scan();
+      // futureString = await new QRCodeReader().scan();
+      futureString = await scanner.scan();
     } catch(e) {
       futureString = e.toString();
     }
